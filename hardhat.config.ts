@@ -1,4 +1,7 @@
 import * as dotenv from "dotenv";
+const { ethers } = require("@nomiclabs/hardhat-waffle");
+// const { ethers } = require("hardhat");
+
 
 import { HardhatUserConfig, task } from "hardhat/config";
 import "@nomiclabs/hardhat-etherscan";
@@ -6,6 +9,7 @@ import "@nomiclabs/hardhat-waffle";
 import "@typechain/hardhat";
 import "hardhat-gas-reporter";
 import "solidity-coverage";
+
 
 dotenv.config();
 
